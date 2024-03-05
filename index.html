@@ -1,0 +1,179 @@
+<html>
+<head>
+      <title>B.A.Marksheet</title>
+<script>
+function printpage()
+{
+window.print();
+return false;
+}
+function clock()
+{
+  var d = new Date();
+  var h = d.getHours();
+  var m = d.getMinutes();
+  var s = d.getSeconds();
+  var session = "PM";
+  if (h > 12)
+  {
+    h = h - 12;
+  }
+  if (h >= 12)
+  {
+    session = "AM";
+  }
+  h = h < 10 ? "0"+h : h;
+  m = m < 10 ? "0"+m : m;
+  s = s < 10 ? "0"+s : s;
+  var time = h + ":" + m + ":" + s + " " + session;
+  document.getElementsByTagName("p")[1].innerHTML = time;
+  setTimeout(clock,1000);
+  }
+  </script>
+<style>
+button { 
+font-size:20px;
+border:0;
+color:white;
+background-color:blue; 
+border-radius:10px;
+}
+button:hover {
+background-color:black;
+color:white;}
+#container{
+width:88%;
+margin:1% 0% 0 0%;
+}
+table{
+  margin-left: 10%;
+}
+</style>
+</head>
+<body onload="clock()">
+<div id="container">
+          <p align="center" color="blue">
+		  <button onclick="printpage()">Print</button><font color="lightblue" <b>Check Another Roll No</b></font></p>
+          <br>
+         <table border="1" cellspacing="0" bgcolor="lightyellow" align="center" cellpadding="0">
+                <tr>
+                   <th colspan="18"> <img src="logo.png" alt="university logo"> </th>
+                   </tr>
+                <tr>
+                   <th colspan="18" height="30">B.A.PART-III 2021-2022(NON-COLLEGIATE)</th>
+                   </tr>
+               <tr>
+                   <th colspan="18" align="left" height="30">PERSONAL DETAILS:</th>
+               </tr>
+               <tr>
+                   <th align="left" colspan="3">NAME</th>
+                   <th align="left" colspan="15">SUMIT KHOWA</th></tr>
+               <tr>
+                   <th align="left" colspan="3">FATHER'S NAME</th>
+                   <th align="left" colspan="15">ROHITASHWA SAINI</th>
+               </tr>
+               <tr>
+                   <th align="left" colspan="3"> MOTHER'S NAME</th>
+                   <th align="left" colspan="15">HEERA DEVI</th>
+               </tr>
+               <tr>
+                   <th align="left" colspan="3">COLLEGE</th>
+                   <th align="left" colspan="15">343. ARTS COLLEGE,SIKAR</th>
+               </tr>
+               <tr>
+                    <th align="left" colspan="18" height="30" >MARKS DETAILS:</th>
+               </tr>
+               <tr>
+                        <th colspan="7" align="left" height="30">SUBJECT</th>
+                        <th>P-I</th>
+                          <th>P-II</th>
+                         <th>P-III</th>
+                         <th>TH TOTAL</th>
+                         <th>TH MAX</th>
+                          <th>SUBM</th>
+                          <th>SUBM MAX</th>
+                          <th>PR</th>
+                          <th>PR MAX</th>
+                          <th>TOTAL</th>
+                          <th>REMARKS</th>
+                        </tr>
+                   <tr>
+                        <th align="left" colspan="18">MAIN SUBJECT:</th>
+                        </tr>
+                   <tr>
+                        <th colspan="7" align="left">3028:HISTORY</th>
+                        <th>072</th>  
+                        <th>085</th>
+                        <th> </th>
+                        <th>157</th>
+                        <th>200</th>
+                        <th> </th>
+                        <th> </th>
+                        <th> </th>
+                        <th> </th>
+                        <th>157</th>
+                        <th> </th>
+                    </tr>
+                   <tr>
+                         <th colspan="7" align="left">3029:POLITICAL SCIENCE</th>
+                         <th>095</th>  
+                        <th>080</th>
+                        <th> </th>
+                        <th>175</th>
+                        <th>200</th>
+                        <th> </th>
+                        <th> </th>
+                        <th> </th>
+                        <th> </th>
+                        <th>175</th>
+                        <th> </th>
+                      </tr>
+                   <tr>
+                       <th colspan="7" align="left">3033:SOCIOLOGY</th>
+                         <th>075</th>  
+                        <th>079</th>
+                        <th> </th>
+                        <th>154</th>
+                        <th>200</th>
+                        <th> </th>
+                        <th> </th>
+                        <th> </th>
+                        <th> </th>
+                        <th>154</th>
+                        <th> </th>
+                      </tr> 
+                    <tr>
+                        <th align="left" colspan="18" height="30">FINAL RESULT</th>
+                      </tr>
+                    <tr> 
+                         <th align="left" colspan="8">PART-I</th>
+                         <th align="left" colspan="4">533/600</th>
+                     </tr>
+                     <tr> 
+                         <th align="left" colspan="8">PART-II</th>
+                         <th align="left" colspan="4">508/600</th>
+                     </tr>
+                      <tr> 
+                         <th align="left" colspan="8">PART-III</th>
+                         <th align="left" colspan="4">489/600</th>
+                     </tr>
+                      <tr> 
+                         <th align="left" colspan="8" height="30">TOTAL</th>
+                         <th align="left" colspan="4">1530/1800</th>
+                     </tr>
+                     <tr>
+                          <th align="left" colspan="2" height="70">DISCLAIMER:</th>
+                          <th colspan="16"><small>THESE RESULTS ARE IMMEDIATE INFORMATION, TO HELP STUDENTS. MOST CARE HAS BEEN TAKEN IN PREPARING THE RESULT: YET WE DO NOT DENY TYPICAL MISTAKE DUE TO DATABASE LINKAGE OR DUE TO ANY OTHER UNINTENTIONAL REASON. THESE CAN NOT BE TREATED HAS ORGINAL MARK SHEET SHALL BE ISSUED BY UNIVERSITY SEPARATELY.STUDENTS ARE THEREFORE ADVISED TO CONFIRM THE RESULTS.</small></th>
+                          </tr>
+                      <tr>
+                          <th colspan="17" align="left">PRINT DATE & TIME:<p></p></th>
+                          <th align="right">RESULT DECLARATION DATE:31-AUG-2022</th>
+                      </tr>
+                                 </table>
+                                                      <br>
+                                                      <br>
+                                                                                                                        <p align="right"><strong>Created By:</strong><a href="https://www.google.com/search?q=sumit+khowal&rlz=1C1CHBF_enIN1026IN1027&oq=sumit&aqs=chrome.1.69i59l3j46i433i512j69i61j69i60j69i65j69i61.3980j0j7&sourceid=chrome&ie=UTF-8" target="_main">Sumit Khowal</a></p>
+                                                             
+</div>
+</body>
+</html>
